@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME','EMAIL@HERE.com'),
+    'username' => env('MAIL_USERNAME','teammsd70@gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +94,7 @@ return [
     |
     */
 
-    'password' => env('MAIL_PASSWORD','SD9F87ASDF987FD9SA7DF'),
+    'password' => env('MAIL_PASSWORD','teammsd70'),
 
     /*
     |--------------------------------------------------------------------------
