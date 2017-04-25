@@ -37,10 +37,10 @@
                 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        <i class="fa fa-btn fa-fw fa-cogs" ></i>Administration<span class="caret"></span></a>
+                        <i class="fa fa-btn fa-fw fa-cogs" ></i>ADMINISTRATION<span class="caret"></span></a>
                     <ul class="dropdown-menu multi level" role="menu">
-                        <li><a href="{{ url('/users') }}"><i class="fa fa-btn fa-fw fa-user"></i>Users</a></li>
-                        <li><a href="{{ url('/roles') }}"><i class="fa fa-btn fa-fw fa-users"></i>Roles</a></li>
+                        <li><a href="{{ url('/users') }}"><i class="fa fa-btn fa-fw fa-user"></i>USERS</a></li>
+                        <li><a href="{{ url('/roles') }}"><i class="fa fa-btn fa-fw fa-users"></i>ROLES</a></li>
                         <li><a href="{{ action('SchoolController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>SCHOOLS</a></li>
                         <li><a href="{{ action('TeamController@index') }}"><i class="fa fa-btn fa-fw fa-users"></i>TEAMS & COACHES</a></li>
                         <li><a href="{{ action('PlayerController@index') }}"><i class="fa fa-btn fa-fw fa-user"></i>PLAYERS</a></li>
@@ -61,19 +61,19 @@
                 @role('referee')
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            <i class="fa fa-btn fa-fw fa-cogs"></i>Functions<span class="caret"></span></a>
+                            <i class="fa fa-btn fa-fw fa-cogs"></i>FUNCTIONS<span class="caret"></span></a>
                         <ul class="dropdown-menu multi level" role="menu">
-                            <li><a href="{{ action('MatchController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Matches</a></li>
-                            <li style="display:inline"><a href="{{ action('FoulController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Fouls</a></li>
-                            <li style="display:inline"><a href="{{ action('RprofileController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Profile</a></li>
-                            <li style="display:inline"><a href="{{ action('RefereematchController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>My Matches</a></li>
+                            <li><a href="{{ action('MatchController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>MATCHES</a></li>
+                            <li style="display:inline"><a href="{{ action('FoulController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>FOULS</a></li>
+                            <li style="display:inline"><a href="{{ action('RprofileController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>PROFILE</a></li>
+                            <li style="display:inline"><a href="{{ action('RefereematchController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>MY MATCHES</a></li>
 
 
                             {{--<li class="divider"></li>--}}
-                            {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>Files</a></li>--}}
+                            {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>FILES</a></li>--}}
                      
                         {{--<li class="divider"></li>--}}
-                        {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>Files</a></li>--}}
+                        {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>FILES</a></li>--}}
                            </ul>
                             </li>
 
@@ -83,14 +83,14 @@
                 @role('player')
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        <i class="fa fa-btn fa-fw fa-cogs"></i>Functions<span class="caret"></span></a>
+                        <i class="fa fa-btn fa-fw fa-cogs"></i>FUNCTIONS<span class="caret"></span></a>
                     <ul class="dropdown-menu multi level" role="menu">
-                        <li><a href="{{ action('PprofileController@index') }}"><i class="fa fa-btn fa-fw fa-user"></i>Profile</a></li>
-                        <li style="display:inline"><a href="{{ action('PlayermatchController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>My Matches</a></li>
+                        <li><a href="{{ action('PprofileController@index') }}"><i class="fa fa-btn fa-fw fa-user"></i>PROFILE</a></li>
+                        <li style="display:inline"><a href="{{ action('PlayermatchController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>MY MATCHES</a></li>
 
 
                         {{--<li class="divider"></li>--}}
-                        {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>Files</a></li>--}}
+                        {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>FILES</a></li>--}}
                     </ul>
                 </li>
                 
@@ -102,16 +102,16 @@
             @role('coach')
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        <i class="fa fa-btn fa-fw fa-cogs"></i>Functions<span class="caret"></span></a>
+                        <i class="fa fa-btn fa-fw fa-cogs"></i>FUNCTIONS<span class="caret"></span></a>
                     <ul class="dropdown-menu multi level" role="menu">
-                        <li><a href="{{ action('PlayerselectController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Players for Match</a></li>
-                        <li style="display:inline"><a href="{{ action('FoulController@foullist') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Fouls List</a></li>
-                        <li style="display:inline"><a href="{{ action('TeamController@coachteam') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>My Team Matches</a></li>
-                        <li style="display:inline"><a href="{{ action('PListController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Players List</a></li>
+                        <li><a href="{{ action('PlayerselectController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>PLAYERS FOR MATCH</a></li>
+                        <li style="display:inline"><a href="{{ action('FoulController@foullist') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>FOULS LIST</a></li>
+                        <li style="display:inline"><a href="{{ action('TeamController@coachteam') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>MY TEAM MATCHES</a></li>
+                        <li style="display:inline"><a href="{{ action('PListController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>PLAYERS LIST</a></li>
 
 
                         {{--<li class="divider"></li>--}}
-                        {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>Files</a></li>--}}
+                        {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>FILES</a></li>--}}
                     </ul>
                 </li>
             @endrole
@@ -121,9 +121,9 @@
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->
                 @if (Auth::guest())
-                    {{--<li><a href="{{ url('/login') }}"><i class="fa fa-btn fa-lg fa-fw fa-sign-in"></i>Login</a></li>--}}
-                    <li><a href="{{ url('/login') }}">Login</a></li>
-                    <li><a href="{{ url('/register') }}">Register</a></li>
+                    {{--<li><a href="{{ url('/login') }}"><i class="fa fa-btn fa-lg fa-fw fa-sign-in"></i>LOGIN</a></li>--}}
+                    <li><a href="{{ url('/login') }}">LOGIN</a></li>
+                    <li><a href="{{ url('/register') }}">REGISTER</a></li>
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
@@ -131,7 +131,7 @@
                             <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-fw fa-sign-out"></i>LOGOUT</a></li>
                             <li><a href="{{ url('/change-password') }}"><i class="fa fa-btn fa-fw fa-lock"></i>CHANGE PASSWORD</a></li>
                             <li class="divider"></li>
-                            <li><a href="{{ url('/help') }}"><i class="fa fa-btn fa-fw fa-question-circle"></i>Help</a></li>
+                            <li><a href="{{ url('/help') }}"><i class="fa fa-btn fa-fw fa-question-circle"></i>HELP</a></li>
                         </ul>
                     </li>
                 @endif
