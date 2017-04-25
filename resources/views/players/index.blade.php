@@ -54,7 +54,7 @@
                 <td>{{ $player->p_estatus }}</td>
                 <td>{{ $player->school->s_name }}</td>
                 <td>{{ $player->team->tm_name }}</td>
-                    <?php $foul = $player->foul ?>
+                    <?php $foul = $player->$foul ?>
                     <td> Yellow {{ $foul->y_card}}</td>
                     <td> Red {{ $foul->r_card}}</td>
 
