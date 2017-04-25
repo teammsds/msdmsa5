@@ -32,9 +32,9 @@ class Player extends Model
         return $this->belongsTo('App\Team');
     }
 
-    public function foul()
+    public function fouls()
     {
-        return $this->hasOne('App\Foul');
+        return $this->hasMany('App\Foul');
 
     }
     //
