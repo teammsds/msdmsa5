@@ -13,7 +13,7 @@
             <!-- Branding Image -->
             <div class="pull-left"> <img src="images/ball1.png" style="height: 45px;width: 45px"></div>
             <a class="navbar-brand" href="{{ url('/') }}">
-               Home
+               HOME
             </a>
 
             </div>
@@ -21,9 +21,9 @@
               <!--  Buttons at navbar -->
              <ul class="nav navbar-nav">
              
-            <li><a  href="{{action('HomeController@display')}}">About MSA</a></li>
-            <li><a  href="{{action('LeaderboardController@index')}}">Table</a></li>
-            <li><a href="{{action('StatisticController@index')}}">Stats</a></li>
+            <li><a  href="{{action('HomeController@display')}}">ABOUT MSA</a></li>
+            <li><a  href="{{action('LeaderboardController@index')}}">TABLE</a></li>
+            <li><a href="{{action('StatisticController@index')}}">STATS</a></li>
         
             </ul>
 
@@ -41,13 +41,13 @@
                     <ul class="dropdown-menu multi level" role="menu">
                         <li><a href="{{ url('/users') }}"><i class="fa fa-btn fa-fw fa-user"></i>Users</a></li>
                         <li><a href="{{ url('/roles') }}"><i class="fa fa-btn fa-fw fa-users"></i>Roles</a></li>
-                        <li><a href="{{ action('SchoolController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Schools</a></li>
-                        <li><a href="{{ action('TeamController@index') }}"><i class="fa fa-btn fa-fw fa-users"></i>Teams & Coaches</a></li>
-                        <li><a href="{{ action('PlayerController@index') }}"><i class="fa fa-btn fa-fw fa-user"></i>Players</a></li>
-                        <li><a href="{{ action('FieldController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Fields</a></li>
-                        <li><a href="{{ action('MatchController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Matches</a></li>
-                        <li><a href="{{ action('TournamentController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Tournaments</a></li>
-                        <li><a href="{{ action('RefereeController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Referees</a></li>
+                        <li><a href="{{ action('SchoolController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>SCHOOLS</a></li>
+                        <li><a href="{{ action('TeamController@index') }}"><i class="fa fa-btn fa-fw fa-users"></i>TEAMS & COACHES</a></li>
+                        <li><a href="{{ action('PlayerController@index') }}"><i class="fa fa-btn fa-fw fa-user"></i>PLAYERS</a></li>
+                        <li><a href="{{ action('FieldController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>FIELDS</a></li>
+                        <li><a href="{{ action('MatchController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>MATCHES</a></li>
+                        <li><a href="{{ action('TournamentController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>TOURNAMENTS</a></li>
+                        <li><a href="{{ action('RefereeController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>REFEREES</a></li>
 
                        
                         {{--<li class="divider"></li>--}}
@@ -128,8 +128,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu" >
-                            <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-fw fa-sign-out"></i>Logout</a></li>
-                            <li><a href="{{ url('/change-password') }}"><i class="fa fa-btn fa-fw fa-lock"></i>Change Password</a></li>
+                            <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-fw fa-sign-out"></i>LOGOUT</a></li>
+                            <li><a href="{{ url('/change-password') }}"><i class="fa fa-btn fa-fw fa-lock"></i>CHANGE PASSWORD</a></li>
                             <li class="divider"></li>
                             <li><a href="{{ url('/help') }}"><i class="fa fa-btn fa-fw fa-question-circle"></i>Help</a></li>
                         </ul>
