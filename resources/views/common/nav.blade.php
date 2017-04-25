@@ -23,7 +23,7 @@
              
             <li><a  href="{{action('HomeController@display')}}">About MSA</a></li>
             <li><a  href="{{action('LeaderboardController@index')}}">Table</a></li>
-            <!-- <li><a href="{{action('StatisticController@index')}}">Stats</a></li> -->
+            <li><a href="{{action('StatisticController@index')}}">Stats</a></li>
         
             </ul>
 
@@ -44,9 +44,9 @@
                         <li><a href="{{ action('SchoolController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Schools</a></li>
                         <li><a href="{{ action('TeamController@index') }}"><i class="fa fa-btn fa-fw fa-users"></i>Teams & Coaches</a></li>
                         <li><a href="{{ action('PlayerController@index') }}"><i class="fa fa-btn fa-fw fa-user"></i>Players</a></li>
-                        <li><a href="{{ action('FieldController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Fields</a>
-                        <li><a href="{{ action('MatchController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Matches</a>
-                        <li><a href="{{ action('TournamentController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Tournaments</a>
+                        <li><a href="{{ action('FieldController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Fields</a></li>
+                        <li><a href="{{ action('MatchController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Matches</a></li>
+                        <li><a href="{{ action('TournamentController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Tournaments</a></li>
                         <li><a href="{{ action('RefereeController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Referees</a></li>
 
                        
@@ -56,14 +56,14 @@
                     </ul>
                     </li>
                 @endrole
-                    </ul>
-              {{-- Menu for Users with referee Role Only --}}   
+                    
+                {{-- Menu for Users with referee Role Only --}}   
                 @role('referee')
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                             <i class="fa fa-btn fa-fw fa-cogs"></i>Functions<span class="caret"></span></a>
                         <ul class="dropdown-menu multi level" role="menu">
-                            <li><a href="{{ action('MatchController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Matches</a>
+                            <li><a href="{{ action('MatchController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Matches</a></li>
                             <li style="display:inline"><a href="{{ action('FoulController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Fouls</a></li>
                             <li style="display:inline"><a href="{{ action('RprofileController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Profile</a></li>
                             <li style="display:inline"><a href="{{ action('RefereematchController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>My Matches</a></li>
@@ -71,11 +71,11 @@
 
                             {{--<li class="divider"></li>--}}
                             {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>Files</a></li>--}}
-                        </ul>
-                    </li>
+                     
                         {{--<li class="divider"></li>--}}
                         {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>Files</a></li>--}}
-
+                           </ul>
+                            </li>
 
                 @endrole
 
@@ -93,14 +93,30 @@
                         {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>Files</a></li>--}}
                     </ul>
                 </li>
-                {{--<li class="divider"></li>--}}
-                {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>Files</a></li>--}}
-
-
+                
                 @endrole
-            </ul>
-            @endif
+            
 
+            {{-- Menu for Users with Coach Role Only --}}   
+              
+            @role('coach')
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <i class="fa fa-btn fa-fw fa-cogs"></i>Functions<span class="caret"></span></a>
+                    <ul class="dropdown-menu multi level" role="menu">
+                        <li><a href="{{ action('PlayerselectController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Players for Match</a></li>
+                        <li style="display:inline"><a href="{{ action('FoulController@foullist') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Fouls List</a></li>
+                        <li style="display:inline"><a href="{{ action('TeamController@coachteam') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>My Team Matches</a></li>
+                        <li style="display:inline"><a href="{{ action('PListController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Players List</a></li>
+
+
+                        {{--<li class="divider"></li>--}}
+                        {{--<li><a href="{{ url('/files') }}"><i class="fa fa-btn fa-fw fa-file"></i>Files</a></li>--}}
+                    </ul>
+                </li>
+            @endrole
+                </ul>
+            @endif
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->
@@ -120,7 +136,6 @@
                     </li>
                 @endif
             </ul>
-        </div>    
-               
+         </div>           
     </div>
 </nav>
