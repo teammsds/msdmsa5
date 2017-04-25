@@ -10,13 +10,7 @@
  *| and give it the controller to call when that URI is requested.
  *|
  *
- * @category   Application Routes
- * @package    Basic-Routes
- * @author     Sachin Pawaskar<spawaskar@unomaha.edu>
- * @copyright  2016-2017
- * @license    The MIT License (MIT)
- * @version    GIT: $Id$
- * @since      File available since Release 1.0.0
+ * 
  */
 
 Route::get('/', function () {
@@ -98,15 +92,10 @@ Route::get('laravel-version', function()
     Route::get('/exporttournaments', 'Excelcontroller@exporttournaments');  
     Route::get('/exportfields', 'Excelcontroller@exportfields');    
 
+//password reset
+    Route::get('password/reset.{token?}', 'Auth\PasswordController@showresetForm');
+    Route::post('password/email' , 'Auth\PasswordController@sendResetLinkEmail');
+    Route::Post('password/reset', 'Auth\PasswordController@reset');
 
 
 
-
-//    Route::delete('/comments/{comment}', 'CommentsController@destroy');
-//    Route::resource('comments', 'CommentsController');
-//    Route::get('comments/{student}/addforstudent', ['as' => 'comments.addforstudent',
-//        'uses' => 'CommentsController@addforstudent']);
-//    Route::get('comments/{planofstudy}/addforplanofstudy', ['as' => 'comments.addforplanofstudy',
-//        'uses' => 'CommentsController@addforplanofstudy']);
-
-//});
