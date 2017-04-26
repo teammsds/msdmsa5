@@ -6,7 +6,7 @@
         <div class="col-md-15 col-md-offset-0">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 style= "color: black" align="middle">Schools</h4>
+                    <h4 style= "color: black" align:"middle">Schools</h4>
                       <a href="{{url('/schools/create')}}" class="btn btn-primary btn-sm">Add New School</a>
                       <div class="pull-right">
                       <a href="{{action('Excelcontroller@exportschools')}}" class="btn btn-primary btn-sm">Download</a>
